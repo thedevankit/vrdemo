@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VR Gallery</title>
+    <meta name="description" content="360&deg;VR Gallery">
+    <script src="js/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="city-amar" crossorigin="anonymous" src="assets/hostel.jpg">
+    </a-assets>
+      <a-sky id="image-360" radius="10" src="#city-amar" rotation="0 180 0" ></a-sky>
+      <a-entity camera look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse" position="0 0 0">
+        <a-cursor id="cursor"></a-cursor>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
